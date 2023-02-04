@@ -7,6 +7,7 @@
   --accent-color: #159741;
   --font-color-black: #333;
   --font-color-white: #fff;
+  --disabled-color: #bdbdbd;
 }
 /*------------------------------------------------------
 フォントファイル
@@ -31,7 +32,9 @@
 ------------------------------------------------------*/
 html {
   visibility: hidden;
+  scroll-behavior: smooth;
 }
+
 html.wf-active {
   visibility: visible;
 }
@@ -43,4 +46,228 @@ body {
   letter-spacing: 0.03em;
   color: var(--font-color-black);
 }
+/*------------------------------------------------------
+セクション見出し
+------------------------------------------------------*/
+.sectionTitle {
+  text-align: center;
+}
 
+.sectionTitle__sub {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent-color);
+}
+
+.sectionTitle__sub--white {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle__sub {
+    margin-bottom: 19px;
+    font-size: 18px;
+  }
+}
+
+.sectionTitle__main {
+  display: block;
+  position: relative;
+  line-height: 1;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "reross-quadratic", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.sectionTitle__main--white {
+  color: #fff;
+}
+
+.sectionTitle__main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  margin: auto;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.sectionTitle__main--white::after {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle__main {
+    font-size: 48px;
+  }
+
+  .sectionTitle__main::after {
+    bottom: -19px;
+  }
+}
+/*------------------------------------------------------
+ページトップへ戻るボタン
+------------------------------------------------------*/
+.pageTopBtn {
+  display: block;
+  position: fixed;
+  right: 16px;
+  bottom: 305px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .pageTopBtn {
+    right: 60px;
+    bottom: 272px;
+    width: 120px;
+    height: 120px;
+    transition: all 0.3s;
+  }
+
+  .pageTopBtn:hover {
+    color: #333;
+    background-color: #333;
+  }
+}
+
+.pageTopBtn__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageTopBtn__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .pageTopBtn__icon {
+    width: 49px;
+    height: 49px;
+  }
+
+  .pageTopBtn:hover .pageTopBtn__icon {
+    fill: #fff;
+  }
+}
+
+.pageTopBtn__text {
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "reross-quadratic", sans-serif;
+  letter-spacing: 0.03em;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .pageTopBtn__text {
+    font-size: 16px;
+  }
+}
+/*------------------------------------------------------
+もっと見るボタン
+------------------------------------------------------*/
+.ghostBtn-wrap {
+  text-align: center;
+}
+
+.ghostBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #333;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .ghostBtn {
+    transition: all 0.3s;
+  }
+
+  .ghostBtn:hover {
+    color: #fff;
+    background-color: #333;
+  }
+}
+
+.ghostBtn__text {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.ghostBtn__icon {
+  display: inline-block;
+  margin-left: 22px;
+  width: 13px;
+  height: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .ghostBtn__icon {
+    margin-left: 24px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .ghostBtn:hover .ghostBtn__icon {
+    fill: #fff;
+  }
+}
+/*------------------------------------------------------
+送信ボタン
+------------------------------------------------------*/
+.submitBtn-Wrap {
+  margin-top: 43px;
+  text-align: center;
+}
+
+.submitBtn {
+  padding: 20px 0;
+  max-width: 300px;
+  width: 100%;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.submitBtn:disabled {
+  background-color: var(--disabled-color);
+}
+
+@media screen and (min-width: 768px) {
+  .submitBtn {
+    padding: 19px 101px;
+    max-width: none;
+    width: 239px;
+    transition: opacity 0.3s;
+  }
+
+  .submitBtn:hover {
+    opacity: 0.7;
+  }
+}
