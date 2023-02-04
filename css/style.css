@@ -1,0 +1,46 @@
+/*------------------------------------------------------
+変数
+------------------------------------------------------*/
+:root {
+  --base-color: #2f2f2f;
+  --main-color: #f2f2f2;
+  --accent-color: #159741;
+  --font-color-black: #333;
+  --font-color-white: #fff;
+}
+/*------------------------------------------------------
+フォントファイル
+------------------------------------------------------*/
+@font-face {
+  font-display: optional;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/noto_sans_jp_regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/noto_sans_jp_bold.woff2) format("woff2");
+}
+/*------------------------------------------------------
+ベーススタイル
+------------------------------------------------------*/
+html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--font-color-black);
+}
+
