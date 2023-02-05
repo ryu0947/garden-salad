@@ -68,18 +68,18 @@
           </picture>
         </h1>
         <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#about" class="nav-link header__nav-link">About</a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="nav-link header__link">About</a>
             </li>
-            <li class="header__nav-item">
-              <a href="#menu" class="nav-link header__nav-link">Menu</a>
+            <li class="header__item">
+              <a href="#menu" class="nav-link header__link">Menu</a>
             </li>
-            <li class="header__nav-item">
-              <a href="#shop" class="nav-link header__nav-link">Shop</a>
+            <li class="header__item">
+              <a href="#shop" class="nav-link header__link">Shop</a>
             </li>
-            <li class="header__nav-item">
-              <a href="#contact" class="nav-link header__nav-link">Contact</a>
+            <li class="header__item">
+              <a href="#contact" class="nav-link header__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -187,38 +187,56 @@
           </ol>
         </div>
       </section>
+      <section class="shop">
+        <picture class="shop__location">
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="img/google-map-pc.webp"
+          />
+          <source media="(min-width: 768px)" srcset="img/google-map-pc.png" />
+          <source type="image/webp" srcset="img/google-map-sp.webp" />
+          <source srcset="img/google-map-sp.png" />
+          <img
+            src="img/google-map-pc.png"
+            alt="Garden SaladのGoogleマップの画像"
+            loading="lazy"
+          />
+        </picture>
+        <div class="shop__body"></div>
+      </section>
     </main>
     <footer class="footer">
       <ul class="footer__icons">
-        <li class="footer__icons-item">
-          <a href="" class="footer__icons-link">
-            <i class="fa-brands fa-twitter footer__icon"></i>
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-twitter footer__img"></i>
           </a>
         </li>
-        <li class="footer__icons-item">
-          <a href="" class="footer__icons-link">
-            <i class="fa-brands fa-instagram footer__icon"></i>
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-instagram footer__img"></i>
           </a>
         </li>
-        <li class="footer__icons-item">
-          <a href="" class="footer__icons-link">
-            <i class="fa-brands fa-tiktok footer__icon"></i>
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-tiktok footer__img"></i>
           </a>
         </li>
       </ul>
       <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item">
-            <a href="" class="nav-link footer__nav-link">About</a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">About</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="" class="nav-link footer__nav-link">Menu</a>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Menu</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="" class="nav-link footer__nav-link">Shop</a>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Shop</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="" class="nav-link footer__nav-link">Contact</a>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -232,7 +250,7 @@
     <a href="#" class="pageTopBtn">
       <div class="pageTopBtn__inner">
         <svg
-          class="pageTopBtn__iconWrap"
+          class="pageTopBtn__icon"
           fill="none"
           height="34"
           viewBox="0 0 39 34"
@@ -240,7 +258,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            class="pageTopBtn__icon"
+            class="pageTopBtn__path"
             d="m16.9019 1.49999c1.1547-1.999996 4.0415-1.99999 5.1962.00001l16.0214 27.75c1.1548 2-.2886 4.5-2.598 4.5h-32.04298c-2.3094 0-3.752767-2.5-2.598066-4.5z"
             fill="#333"
           />
