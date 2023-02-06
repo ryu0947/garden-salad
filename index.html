@@ -188,6 +188,10 @@
         </div>
       </section>
       <section class="shop">
+        <h2 class="sectionTitle">
+          <span class="sectionTitle__sub">店舗情報</span>
+          <span class="sectionTitle__main">Shop</span>
+        </h2>
         <picture class="shop__location">
           <source
             media="(min-width: 768px)"
@@ -198,12 +202,68 @@
           <source type="image/webp" srcset="img/google-map-sp.webp" />
           <source srcset="img/google-map-sp.png" />
           <img
+            class="shop__map"
             src="img/google-map-pc.png"
             alt="Garden SaladのGoogleマップの画像"
             loading="lazy"
           />
         </picture>
-        <div class="shop__body"></div>
+        <div class="inner">
+          <div class="shop__body">
+            <div class="shop__date">
+              <h3 class="shop__title">
+                <span class="shop__head">TF&nbsp;</span>Garden Salad
+                <span class="shop__kana">（ガーデンサラダ）</span>
+              </h3>
+              <div class="shop__info">
+                <p class="shop__text">〒150-0000</p>
+                <p class="shop__text">東京都渋谷区表参道&nbsp;10-20-20</p>
+                <p class="shop__text">Tel.&nbsp;090-1234-8899</p>
+                <dl class="shop__list">
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">営業時間</dt>
+                    <dd class="shop__text">11：00&nbsp;-&nbsp;20：00</dd>
+                  </div>
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">定休日</dt>
+                    <dd class="shop__text">日曜</dd>
+                  </div>
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">アクセス</dt>
+                    <dd class="shop__text">
+                      <p class="shop__text">
+                        東京メトロ千代田線「明治神宮前駅」<br
+                          class="is-pc"
+                        />5番出口から徒歩5分
+                      </p>
+                      <p class="shop__text">JR「原宿駅」東口から徒歩10分</p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="shop__picture">
+              <figure>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="img/cafe-pc.webp"
+                  />
+                  <source media="(min-width: 768px)" srcset="img/cafe-pc.jpg" />
+                  <source type="image/webp" srcset="img/cafe-sp.webp" />
+                  <source srcset="img/cafe-sp.jpg" />
+                  <img
+                    class="shop__img"
+                    src="img/cafe-pc.jpg"
+                    alt="Garden Saladの外観の写真"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
