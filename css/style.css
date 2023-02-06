@@ -52,6 +52,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+dt {
+  font-weight: normal;
+}
 /*------------------------------------------------------
 コンテンツ幅
 ------------------------------------------------------*/
@@ -625,6 +629,7 @@ about
 @media screen and (min-width: 768px) {
   .about {
     padding: 130px 0 150px;
+    overflow-x: hidden;
   }
 }
 
@@ -707,7 +712,7 @@ about
   }
 
   .about__order--three {
-    right: -43px;
+    right: -44px;
     bottom: -35px;
   }
 }
@@ -751,5 +756,163 @@ about
   .about__text {
     font-size: 18px;
     max-width: 400px;
+  }
+}
+/*------------------------------------------------------
+shop
+------------------------------------------------------*/
+.shop {
+  padding: 64px 0;
+  background-color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .shop {
+    position: relative;
+    padding: 120px 0;
+  }
+}
+
+.shop__location {
+  display: block;
+  margin-top: 75px;
+  width: 100%;
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__location {
+    margin-top: 99px;
+    height: 465px;
+  }
+}
+
+.shop__map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop__body {
+  margin-top: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__body {
+    display: flex;
+    align-items: center;
+    margin-top: 155px;
+  }
+}
+
+.shop__date {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__date {
+    margin-bottom: 0;
+    width: calc(429 / 1080 * 100%);
+  }
+}
+
+.shop__title {
+  line-height: 1;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "reross-quadratic", sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__title {
+    text-align: left;
+  }
+}
+
+.shop__head {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.shop__kana {
+  display: block;
+  margin-top: 4px;
+  line-height: 1.4375;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__kana {
+    display: inline-block;
+    margin-top: 0;
+    line-height: 1.44;
+    font-size: 18px;
+  }
+}
+
+.shop__info {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__info {
+    margin-top: 25px;
+  }
+}
+
+.shop__text {
+  line-height: 1.6875;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__text {
+    line-height: 2;
+    font-size: 18px;
+  }
+}
+
+.shop__list {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__list {
+    margin-top: 17px;
+  }
+}
+
+.shop__item {
+  display: flex;
+  column-gap: 15px;
+}
+
+.shop__term {
+  flex: 0 0 66px;
+}
+
+@media screen and (min-width: 768px) {
+  .shop__term {
+    flex: 0 0 74px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop__picture {
+    position: absolute;
+    right: 0;
+    width: calc(700 / 1440 * 100vw);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop__img {
+    width: 100%;
+    height: 500px;
+    max-width: none;
+    object-fit: cover;
   }
 }
