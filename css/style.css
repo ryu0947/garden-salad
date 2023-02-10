@@ -1198,3 +1198,105 @@ shop
     box-shadow: 0 0 3px 0 rgba(21, 151, 65, 1);
   }
 }
+
+.contact__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+}
+
+.contact__modalWrap {
+  position: relative;
+  margin: 20px 20px;
+  padding: 35px 16px;
+  height: calc(100% - 40px);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__modalWrap {
+    margin: 40px auto;
+    padding: 50px 36px;
+    max-width: 800px;
+    height: calc(100% - 80px);
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__close {
+    top: 24px;
+    right: 28px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.modal__line {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.modal__line:first-child {
+  transform: rotate(45deg);
+}
+
+.modal__line:last-child {
+  transform: rotate(-45deg);
+}
+
+.contact__modalInner {
+  margin-top: 60px;
+}
+
+.contact__text {
+  margin-top: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.contact__modalArticle {
+  margin-top: 40px;
+}
+
+.contact__modalTitle {
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact__modalList {
+  margin: 25px 0 0 16px;
+  list-style: decimal;
+}
+
+.contact__modalItem {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.contact__modalList--inner {
+  margin: 15px 0 0 16px;
+}
+
+.contact__counterItem {
+  display: flex;
+}
