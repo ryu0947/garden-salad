@@ -86,6 +86,34 @@
       </div>
     </header>
     <main>
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__body">
+            <h2 class="mv__title">
+              Let's eat<br />delicious<br /><span class="color-green"
+                >salad.</span
+              >
+            </h2>
+            <p class="mv__text">
+              <span class="mv__textBottom">健康のためじゃない、</span><br />
+              <span class="emphasis-green">「おいしいから食べたい」サラダ</span>
+            </p>
+          </div>
+          <div class="mv__picture">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                type="image/webp"
+                srcset="img/mv-pc.webp"
+              />
+              <source media="(min-width: 768px)" srcset="img/mv-pc.jpg" />
+              <source type="image/webp" srcset="img/mv-sp.webp" />
+              <source srcset="img/mv-sp.jpg" />
+              <img class="mv__img" src="img/mv-pc.jpg" alt="" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </section>
       <section id="message" class="message">
         <h2 class="message__title">
           毎日食べるからこそ、<br class="is-sp" />おいしいものを。
@@ -185,6 +213,11 @@
               </figure>
             </li>
           </ol>
+        </div>
+      </section>
+      <section class="parallax">
+        <div class="parallax__inner">
+          <div class="parallax__img parallax__img--cook"></div>
         </div>
       </section>
       <section id="menu" class="menu">
@@ -342,6 +375,11 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="parallax">
+        <div class="parallax__inner">
+          <div class="parallax__img parallax__img--cafe"></div>
         </div>
       </section>
       <section id="shop" class="shop">
