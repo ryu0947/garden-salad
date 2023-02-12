@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/noto_sans_jp_regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/noto_sans_jp_bold.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "pjl2jsq",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>Garden Salad</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__title">
+          <picture>
+            <source type="image/webp" srcset="/img/logo-header.webp" />
+            <source srcset="/img/logo-header.png" />
+            <img src="/img/logo-header.png" alt="Garden Salad" />
+          </picture>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="nav-link header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#menu" class="nav-link header__link">Menu</a>
+            </li>
+            <li class="header__item">
+              <a href="#shop" class="nav-link header__link">Shop</a>
+            </li>
+            <li class="header__item">
+              <a href="#contact" class="nav-link header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__body">
+            <h2 class="mv__title">
+              Let's eat<br />delicious<br /><span class="color-green"
+                >salad.</span
+              >
+            </h2>
+            <p class="mv__text">
+              <span class="mv__textBottom">健康のためじゃない、</span><br />
+              <span class="emphasis-green">「おいしいから食べたい」サラダ</span>
+            </p>
+          </div>
+          <div class="mv__picture">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                type="image/webp"
+                srcset="img/mv-pc.webp"
+              />
+              <source media="(min-width: 768px)" srcset="img/mv-pc.jpg" />
+              <source type="image/webp" srcset="img/mv-sp.webp" />
+              <source srcset="img/mv-sp.jpg" />
+              <img class="mv__img" src="img/mv-pc.jpg" alt="" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section id="message" class="message">
+        <h2 class="message__title">
+          毎日食べるからこそ、<br class="is-sp" />おいしいものを。
+        </h2>
+        <p class="message__text">
+          ヘルシーで栄養豊富なサラダは、健康のために<br
+            class="is-pc"
+          />毎日食べようと思っている人は多いはず。
+        </p>
+        <p class="message__text">
+          毎日食べるからこそ品質の良い、飽きのこない、<br
+            class="is-pc"
+          />おいしいものを楽しんでいただきたい。
+        </p>
+        <p class="message__text">
+          そんな想いからできた「おいしいから食べたい」サラダを<br
+            class="is-pc"
+          />あなたにお届けいたします。
+        </p>
+        <div class="message__bgText">Garden<br class="is-sp" />&nbsp;Salad</div>
+      </section>
+      <section id="about" class="about">
+        <div class="inner">
+          <h2 class="sectionTitle">
+            <span class="sectionTitle__sub">Garden Saladのこだわり</span>
+            <span class="sectionTitle__main">About</span>
+          </h2>
+          <ol class="about__list">
+            <li class="about__item">
+              <div class="about__body">
+                <h3 class="about__title">
+                  全ての食材が安心の<span class="color-green">国産</span>
+                </h3>
+                <p class="about__text">
+                  TF Garden
+                  Saladaの食材は全て産地を公表をしています。信頼できる農家さんから直接買い取り、その日採れたものをその日のうちに厨房へ。
+                </p>
+                <div class="about__order about__order--one">01</div>
+              </div>
+              <figure class="about__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/about-01.webp" />
+                  <source srcset="img/about-01.jpg" />
+                  <img
+                    src="img/about-01.jpg"
+                    alt="カゴに入った野菜の写真"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </li>
+            <li class="about__item about__item--reverse">
+              <div class="about__body">
+                <h3 class="about__title">
+                  カスタム可能で<br />
+                  その組み合わせは<span class="color-green">全400種類</span>！
+                </h3>
+                <p class="about__text">
+                  定番のメニューに加えてサラダのフルカスタムも可能。お好みのベース×トッピング×ドレッシングを選んであなた好みにアレンジして。
+                </p>
+                <div class="about__order about__order--two">02</div>
+              </div>
+              <figure class="about__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/about-02.webp" />
+                  <source srcset="img/about-02.jpg" />
+                  <img
+                    src="img/about-02.jpg"
+                    alt="ビュッフェ形式でお皿に盛り付けられた野菜の写真"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </li>
+            <li class="about__item">
+              <div class="about__body">
+                <h3 class="about__title">
+                  <span class="color-green">ジムトレーナー監修</span>の<br
+                    class="is-sp"
+                  />メニュー
+                </h3>
+                <p class="about__text">
+                  コンビニのサラダチキンに飽きたらこれ！一食でタンパク質20gがとれるトレーニング向けのメニューもご用意してます。
+                </p>
+                <div class="about__order about__order--three">03</div>
+              </div>
+              <figure class="about__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/about-03.webp" />
+                  <source srcset="img/about-03.jpg" />
+                  <img
+                    src="img/about-03.jpg"
+                    alt="お皿に盛り付けられているサラダ"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="parallax">
+        <div class="parallax__inner">
+          <div class="parallax__img parallax__img--cook"></div>
+        </div>
+      </section>
+      <section id="menu" class="menu">
+        <div class="menu__inner">
+          <h2 class="sectionTitle">
+            <span class="sectionTitle__sub sectionTitle__sub--white"
+              >メニュー</span
+            >
+            <span class="sectionTitle__main sectionTitle__main--white"
+              >Menu</span
+            >
+          </h2>
+          <p class="menu__lead">
+            P&nbsp;:&nbsp;タンパク質&emsp;F&nbsp;:&nbsp;脂質&emsp;C&nbsp;:&nbsp;糖質
+          </p>
+          <div class="menu__recommend">
+            <div class="menu__card menu__card--large">
+              <div class="menu__cardInner menu__cardInner--medium">
+                <div class="menu__cardLabel">
+                  <p class="menu__cardHead">
+                    <img
+                      src="/img/recommendation.svg"
+                      alt="Recommendation"
+                      loading="lazy"
+                    />
+                  </p>
+                  <p class="menu__cardText">店長おすすめ</p>
+                </div>
+                <h3 class="menu__cardTitle">
+                  カッテージチーズと<br />バジルのサラダ
+                </h3>
+                <p class="menu__price">
+                  <span class="menu__priceIcon">¥</span>
+                  <span class="menu__priceNum">1,100</span>
+                  <span class="menu__priceTax">（税込）</span>
+                </p>
+                <p class="menu__data">
+                  305kcal&ensp;P&nbsp;:&nbsp;16.2g&nbsp;F&nbsp;:&nbsp;12.5g&nbsp;C&nbsp;:&nbsp;13.3g
+                </p>
+              </div>
+            </div>
+            <figure class="menu__picture menu__picture--recommend">
+              <picture>
+                <source type="image/webp" srcset="img/menu-01.webp" />
+                <source srcset="img/menu-01.png" />
+                <img src="img/menu-01.png" alt="" loading="lazy" />
+              </picture>
+            </figure>
+          </div>
+          <div class="menu__pickup">
+            <div class="menu__item">
+              <figure class="menu__picture menu__picture--other">
+                <picture>
+                  <source type="image/webp" srcset="img/menu-02.webp" />
+                  <source srcset="img/menu-02.png" />
+                  <img src="img/menu-02.png" alt="" loading="lazy" />
+                </picture>
+              </figure>
+              <div class="menu__card menu__card--medium">
+                <div class="menu__cardInner menu__cardInner--small">
+                  <h3 class="menu__cardTitle">アボガドサラダ</h3>
+                  <p class="menu__price">
+                    <span class="menu__priceIcon">¥</span>
+                    <span class="menu__priceNum">980</span>
+                    <span class="menu__priceTax">（税込）</span>
+                  </p>
+                  <p class="menu__data">
+                    425kcal&ensp;P&nbsp;:&nbsp;12.2g&nbsp;F&nbsp;:&nbsp;15.3g&nbsp;C&nbsp;:&nbsp;16.8g
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu__item">
+              <figure class="menu__picture menu__picture--other">
+                <picture>
+                  <source type="image/webp" srcset="img/menu-03.webp" />
+                  <source srcset="img/menu-03.png" />
+                  <img src="img/menu-03.png" alt="" loading="lazy" />
+                </picture>
+              </figure>
+              <div class="menu__card menu__card--medium">
+                <div class="menu__cardInner menu__cardInner--small">
+                  <h3 class="menu__cardTitle">チキンサラダ</h3>
+                  <p class="menu__price">
+                    <span class="menu__priceIcon">¥</span>
+                    <span class="menu__priceNum">980</span>
+                    <span class="menu__priceTax">（税込）</span>
+                  </p>
+                  <p class="menu__data">
+                    455kcal&ensp;P&nbsp;:&nbsp;20.2g&nbsp;F&nbsp;:&nbsp;11.3g&nbsp;C&nbsp;:&nbsp;15.7g
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__media">
+            <div class="menu__mediaInner">
+              <h3 class="menu__mediaTitle">Instargam</h3>
+              <p class="menu__mediaText">
+                <span class="menu__mediaLine"
+                  >Instagramにはさらに詳しいメニュー内容などを載せています！</span
+                >
+              </p>
+              <ul class="menu__mediaList">
+                <li class="menu__mediaitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/instagram-01.webp" />
+                    <source srcset="img/instagram-01.jpg" />
+                    <img src="img/instagram-01.jpg" alt="" loading="lazy" />
+                  </picture>
+                </li>
+                <li class="menu__mediaitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/instagram-02.webp" />
+                    <source srcset="img/instagram-02.jpg" />
+                    <img src="img/instagram-02.jpg" alt="" loading="lazy" />
+                  </picture>
+                </li>
+                <li class="menu__mediaitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/instagram-03.webp" />
+                    <source srcset="img/instagram-03.jpg" />
+                    <img src="img/instagram-03.jpg" alt="" loading="lazy" />
+                  </picture>
+                </li>
+                <li class="menu__mediaitem">
+                  <picture>
+                    <source type="image/webp" srcset="img/instagram-04.webp" />
+                    <source srcset="img/instagram-04.jpg" />
+                    <img src="img/instagram-04.jpg" alt="" loading="lazy" />
+                  </picture>
+                </li>
+              </ul>
+              <p class="menu__text">ID：tf_gardensalad</p>
+              <div class="ghostBtn-wrap">
+                <a href="" class="ghostBtn">
+                  <span class="ghostBtn__text">もっとメニューを見る</span>
+                  <svg
+                    class="ghostBtn__icon"
+                    fill="none"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    width="17"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="ghostBtn__path"
+                      clip-rule="evenodd"
+                      d="m2.38814.933352c-.38577 0-.75574.153248-1.02852.426028s-.426026.64275-.426026 1.02852v13.0909c0 .3858.153246.7557.426026 1.0285s.64275.4261 1.02852.4261h13.09086c.3858 0 .7558-.1533 1.0286-.4261.2727-.2728.426-.6427.426-1.0285v-5.0909c0-.1929-.0766-.3779-.213-.51426-.1364-.13639-.3214-.21302-.5143-.21302s-.3778.07663-.5142.21302c-.1364.13636-.2131.32136-.2131.51426v5.0909h-13.09086v-13.0909h5.09091c.19288 0 .37787-.07663.51426-.21302s.21301-.32137.21301-.51426c0-.19288-.07662-.37786-.21301-.51425s-.32138-.213018-.51426-.213018zm14.33306.212368c.1353.13558.2116.31904.2124.51054v4.368c0 .19289-.0766.37787-.213.51426s-.3214.21301-.5143.21301-.3778-.07662-.5142-.21301-.2131-.32137-.2131-.51426v-2.608l-7.48504 7.48654c-.06762.0676-.1479.1213-.23624.1579-.08835.0366-.18304.0554-.27867.0554s-.19032-.0188-.27867-.0554-.16862-.0903-.23624-.1579-.12126-.1479-.15785-.2362c-.0366-.0884-.05543-.1831-.05543-.2787s.01883-.1903.05543-.2787c.03659-.0883.09023-.16859.15785-.23621l7.48656-7.48509h-2.608c-.1929 0-.3779-.07663-.5143-.21302s-.213-.32137-.213-.51426c0-.19288.0766-.37786.213-.51425s.3214-.213018.5143-.213018h4.3636c.0956-.00025.1903.018381.2787.054825.0883.036443.1686.089983.2362.157543z"
+                      fill="#333"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="parallax">
+        <div class="parallax__inner">
+          <div class="parallax__img parallax__img--cafe"></div>
+        </div>
+      </section>
+      <section id="shop" class="shop">
+        <h2 class="sectionTitle">
+          <span class="sectionTitle__sub">店舗情報</span>
+          <span class="sectionTitle__main">Shop</span>
+        </h2>
+        <picture class="shop__location">
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="img/google-map-pc.webp"
+          />
+          <source media="(min-width: 768px)" srcset="img/google-map-pc.png" />
+          <source type="image/webp" srcset="img/google-map-sp.webp" />
+          <source srcset="img/google-map-sp.png" />
+          <img
+            class="shop__map"
+            src="img/google-map-pc.png"
+            alt="Garden SaladのGoogleマップの画像"
+            loading="lazy"
+          />
+        </picture>
+        <div class="inner">
+          <div class="shop__body">
+            <div class="shop__date">
+              <h3 class="shop__name">
+                <span class="shop__head">TF&nbsp;</span>Garden Salad
+                <span class="shop__kana">（ガーデンサラダ）</span>
+              </h3>
+              <div class="shop__info">
+                <p class="shop__text">〒150-0000</p>
+                <p class="shop__text">東京都渋谷区表参道&nbsp;10-20-20</p>
+                <p class="shop__text">Tel.&nbsp;090-1234-8899</p>
+                <dl class="shop__list">
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">営業時間</dt>
+                    <dd class="shop__text">11：00&nbsp;-&nbsp;20：00</dd>
+                  </div>
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">定休日</dt>
+                    <dd class="shop__text">日曜</dd>
+                  </div>
+                  <div class="shop__item">
+                    <dt class="shop__term shop__text">アクセス</dt>
+                    <dd class="shop__text">
+                      <p class="shop__text">
+                        東京メトロ千代田線「明治神宮前駅」<br
+                          class="is-pc"
+                        />5番出口から徒歩5分
+                      </p>
+                      <p class="shop__text">JR「原宿駅」東口から徒歩10分</p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="shop__picture">
+              <figure>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="img/cafe-pc.webp"
+                  />
+                  <source media="(min-width: 768px)" srcset="img/cafe-pc.jpg" />
+                  <source type="image/webp" srcset="img/cafe-sp.webp" />
+                  <source srcset="img/cafe-sp.jpg" />
+                  <img
+                    class="shop__img"
+                    src="img/cafe-pc.jpg"
+                    alt="Garden Saladの外観の写真"
+                    loading="lazy"
+                  />
+                </picture>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="shop__foot">
+          <div class="shop__inner">
+            <figure class="shop__thumb">
+              <picture class="shop__terraceImg">
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="img/terrace-pc.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/terrace-pc.jpg"
+                />
+                <source type="image/webp" srcset="img/terrace-sp.webp" />
+                <source srcset="img/terrace-sp.jpg" />
+                <img
+                  src="img/terrace-pc.jpg"
+                  alt="Garden Saladのテラス席の写真"
+                  loading="lazy"
+                />
+              </picture>
+              <picture class="shop__takeoutImg">
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="img/takeout-pc.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/takeout-pc.jpg"
+                />
+                <source type="image/webp" srcset="img/takeout-sp.webp" />
+                <source srcset="img/takeout-sp.jpg" />
+                <img
+                  src="img/takeout-pc.jpg"
+                  alt="Garden Sladで提供しているテイクアウト用のタンブラーの写真"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <div class="shop__message">
+              <h4 class="shop__title">
+                <img src="img/dear-you.svg" alt="Dean You" />
+              </h4>
+              <div class="shop__intro">
+                <p class="shop__introText">
+                  当店から徒歩5分ほどの場所に、オープンテラスの場所があります。お天気がいい日は、木漏れ日の中で風を感じながら食べるのもおすすめです。
+                </p>
+                <p class="shop__introText">
+                  テイクアウトもご用意できるので、ぜひご利用ください。
+                </p>
+              </div>
+              <p class="shop__imgText">
+                <img src="img/have-a-nice day.svg" alt="Have a nice day !!" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact__inner">
+          <h2 class="sectionTitle">
+            <span class="sectionTitle__sub">お問い合わせ</span>
+            <span class="sectionTitle__main">Contact</span>
+          </h2>
+          <p class="contact__lead">
+            ご質問などは、下記のフォームよりお問い合わせください。
+          </p>
+          <form action="POST" class="contact__form">
+            <div class="contact__item">
+              <label for="your-name" class="contact__label"
+                >お名前<span class="contact__required">必須</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                autocomplete="name"
+                id="your-name"
+                class="contact__input"
+                placeholder="例) 山田　花子"
+                required
+              />
+            </div>
+            <div class="contact__item">
+              <label for="your-email" class="contact__label"
+                >メールアドレス<span class="contact__required"
+                  >必須</span
+                ></label
+              >
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                id="your-email"
+                class="contact__input"
+                pattern="/^[a-zA-Z0-9!-/:-@¥[-`{-~]*$/"
+                placeholder="例) hanako-yamada@example.com"
+                required
+              />
+            </div>
+            <div class="contact__item">
+              <label for="your-tel" class="contact__label">電話番号</label>
+              <input
+                type="tel"
+                autocomplete="tel"
+                id="your-tel"
+                class="contact__input"
+                pattern="/^[0-9]*$/"
+                placeholder="例) 090-0000-0000"
+              />
+            </div>
+            <div class="contact__item">
+              <label for="" id="your-message" class="contact__label"
+                >お問い合わせ内容<span class="contact__required"
+                  >必須</span
+                ></label
+              >
+              <textarea
+                name="textarea"
+                id="your-message"
+                class="contact__input contac__input--textarea"
+                cols="30"
+                rows="10"
+                placeholder="例) ご質問やお問い合わせ内容をご記入ください。"
+                required
+              ></textarea>
+            </div>
+            <div class="contact__item contact__center">
+              <label>
+                <input type="checkbox" class="contact__checkbox" required />
+                <span class="contact__privacy">
+                  <a href="" class="contact__link">プライバシーポリシー</a>
+                  に同意する
+                </span>
+              </label>
+            </div>
+            <div class="submitBtn-Wrap">
+              <button class="submitBtn">送信</button>
+            </div>
+          </form>
+        </div>
+        <div id="js-modal" class="contact__modal">
+          <div class="contact__modalWrap">
+            <h2 class="sectionTitle">
+              <span class="sectionTitle__sub">プライバシーポリシー</span>
+              <span class="sectionTitle__main">Privacy Policy</span>
+            </h2>
+            <button class="modal__close" type="button">
+              <span class="modal__line"></span>
+              <span class="modal__line"></span>
+            </button>
+            <div class="contact__modalInner">
+              <p class="contact__text">
+                ＿＿＿＿＿＿＿＿（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
+              </p>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">第1条（個人情報）</h3>
+                <p class="contact__text">
+                  「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
+                </p>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">第2条（個人情報の収集方法）</h3>
+                <p class="contact__text">
+                  当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。
+                </p>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">
+                  第3条（個人情報を収集・利用する目的）
+                </h3>
+                <p class="contact__text">
+                  当社が個人情報を収集・利用する目的は，以下のとおりです。
+                </p>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    当社サービスの提供・運営のため
+                  </li>
+                  <li class="contact__modalItem">
+                    ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）
+                  </li>
+                  <li class="contact__modalItem">
+                    ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため
+                  </li>
+                  <li class="contact__modalItem">
+                    利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため
+                  </li>
+                  <li class="contact__modalItem">
+                    ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため
+                  </li>
+                  <li class="contact__modalItem">
+                    有料サービスにおいて，ユーザーに利用料金を請求するため
+                  </li>
+                  <li class="contact__modalItem">
+                    上記の利用目的に付随する目的
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">第4条（利用目的の変更）</h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    当社は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。
+                  </li>
+                  <li class="contact__modalItem">
+                    利用目的の変更を行った場合には，変更後の目的について，当社所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">
+                  第5条（個人情報の第三者提供）
+                </h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    当社は，次に掲げる場合を除いて，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。ただし，個人情報保護法その他の法令で認められる場合を除きます。
+                    <ol class="contact__modalList contact__modalList--inner">
+                      <li class="contact__modalItem contact__modalItem--small">
+                        人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって，本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき
+                        <ol
+                          class="contact__modalList contact__modalList--inner"
+                        >
+                          <li
+                            class="contact__modalItem contact__modalItem--small"
+                          >
+                            利用目的に第三者への提供を含むこと
+                          </li>
+                          <li
+                            class="contact__modalItem contact__modalItem--small"
+                          >
+                            第三者に提供されるデータの項目
+                          </li>
+                          <li
+                            class="contact__modalItem contact__modalItem--small"
+                          >
+                            第三者への提供の手段または方法
+                          </li>
+                          <li
+                            class="contact__modalItem contact__modalItem--small"
+                          >
+                            本人の求めに応じて個人情報の第三者への提供を停止すること
+                          </li>
+                          <li
+                            class="contact__modalItem contact__modalItem--small"
+                          >
+                            本人の求めを受け付ける方法
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li class="contact__modalItem">
+                    前項の定めにかかわらず，次に掲げる場合には，当該情報の提供先は第三者に該当しないものとします。
+                    <ol class="contact__modalList contact__modalList--inner">
+                      <li class="contact__modalItem contact__modalItem--small">
+                        当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        合併その他の事由による事業の承継に伴って個人情報が提供される場合
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        個人情報を特定の者との間で共同して利用する場合であって，その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について，あらかじめ本人に通知し，または本人が容易に知り得る状態に置いた場合
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">第6条（個人情報の開示）</h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    当社は，本人から個人情報の開示を求められたときは，本人に対し，遅滞なくこれを開示します。ただし，開示することにより次のいずれかに該当する場合は，その全部または一部を開示しないこともあり，開示しない決定をした場合には，その旨を遅滞なく通知します。なお，個人情報の開示に際しては，1件あたり1，000円の手数料を申し受けます。
+                    <ol class="contact__modalList contact__modalList--inner">
+                      <li class="contact__modalItem contact__modalItem--small">
+                        本人または第三者の生命，身体，財産その他の権利利益を害するおそれがある場合
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合
+                      </li>
+                      <li class="contact__modalItem contact__modalItem--small">
+                        その他法令に違反することとなる場合
+                      </li>
+                    </ol>
+                  </li>
+                  <li class="contact__modalItem">
+                    前項の定めにかかわらず，履歴情報および特性情報などの個人情報以外の情報については，原則として開示いたしません。
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">
+                  第7条（個人情報の訂正および削除）
+                </h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。
+                  </li>
+                  <li class="contact__modalItem">
+                    当社は，ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の訂正等を行うものとします。
+                  </li>
+                  <li class="contact__modalItem">
+                    当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これをユーザーに通知します。
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">
+                  第8条（個人情報の利用停止等）
+                </h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には，遅滞なく必要な調査を行います。
+                  </li>
+                  <li class="contact__modalItem">
+                    前項の調査結果に基づき，その請求に応じる必要があると判断した場合には，遅滞なく，当該個人情報の利用停止等を行います。
+                  </li>
+                  <li class="contact__modalItem">
+                    当社は，前項の規定に基づき利用停止等を行った場合，または利用停止等を行わない旨の決定をしたときは，遅滞なく，これをユーザーに通知します。
+                  </li>
+                  <li class="contact__modalItem">
+                    前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。
+                  </li>
+                </ol>
+              </div>
+              <div class="contact__modalArticle">
+                <h3 class="contact__modalTitle">
+                  第9条（プライバシーポリシーの変更）
+                </h3>
+                <ol class="contact__modalList">
+                  <li class="contact__modalItem">
+                    本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。
+                  </li>
+                  <li class="contact__modalItem">
+                    当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <p class="contact__text contact__text--left">以上</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__icons">
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-twitter footer__img"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-instagram footer__img"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a href="" class="footer__media">
+            <i class="fa-brands fa-tiktok footer__img"></i>
+          </a>
+        </li>
+      </ul>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Menu</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Shop</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="nav-link footer__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <picture class="footer__logo">
+        <source type="image/webp" srcset="img/logo-footer.webp" />
+        <source srcset="img/logo-footer.png" />
+        <img src="img/logo-footer.png" alt="Garden Salad" loading="lazy" />
+      </picture>
+      <small class="copy-right">&copy;&nbsp;TF&nbsp;Garden&nbsp;Salad.</small>
+    </footer>
+    <a href="#" class="pageTopBtn">
+      <div class="pageTopBtn__inner">
+        <svg
+          class="pageTopBtn__icon"
+          fill="none"
+          height="34"
+          viewBox="0 0 39 34"
+          width="39"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="pageTopBtn__path"
+            d="m16.9019 1.49999c1.1547-1.999996 4.0415-1.99999 5.1962.00001l16.0214 27.75c1.1548 2-.2886 4.5-2.598 4.5h-32.04298c-2.3094 0-3.752767-2.5-2.598066-4.5z"
+            fill="#333"
+          />
+        </svg>
+        <p class="pageTopBtn__text">Page&nbsp;top</p>
+      </div>
+    </a>
+  </body>
+</html>
